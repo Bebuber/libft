@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 12:12:00 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 12:32:39 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/26 20:45:45 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	int		len;
+	int		a;
+	int		i;
 	char	*new;
-	int	len;
-	int	a;
-	int	i;
 
 	a = 0;
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 14:30:03 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/23 14:33:41 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/26 20:46:18 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 		dest[i] = src[n];
 		n++;
 		i++;
-	}	
+	}
 	dest[i] = 0;
 	return (m + k);
 }

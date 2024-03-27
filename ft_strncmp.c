@@ -6,11 +6,11 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 17:01:56 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/23 17:42:32 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/26 20:49:14 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(unsigned char *s1, unsigned char *s2, unsigned int n)
+int	ft_strncmp(unsigned char *s1, unsigned char *s2, unsigned int n)
 {
 	unsigned int	i;
 
