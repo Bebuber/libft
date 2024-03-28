@@ -6,9 +6,11 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:43:06 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 14:37:54 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 20:31:12 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,9 +6,11 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 13:30:54 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 20:48:44 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 20:29:44 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

@@ -6,20 +6,20 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 17:26:50 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 20:44:28 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 21:10:19 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *s1)
+char	*ft_strdup(const char *s1)
 {
 	int		len;
 	char	*ptr;
 	char	*s2;
 	char	*ptr2;
 
-	ptr = s1;
+	ptr = (char *)s1;
 	len = 0;
 	while (*ptr != 0)
 	{

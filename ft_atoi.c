@@ -6,11 +6,11 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 12:07:22 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/24 14:02:15 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 20:32:15 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
 int	if_number(const char str)
 {

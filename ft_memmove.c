@@ -6,13 +6,15 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 09:52:24 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 20:53:29 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 21:15:50 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_memmove(char *dst, const char *src, int len)
+#include "libft.h"
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int	a;
+	size_t	a;
 
 	a = 0;
 	if ((dst == src) || len == 0)
@@ -21,16 +23,16 @@ char	*ft_memmove(char *dst, const char *src, int len)
 	{
 		while (a < len)
 		{
-			dst[a] = src[a];
+			((unsigned char *)dst)[a] = ((unsigned char *)src)[a];
 			a++;
 		}
 	}
 	else
 	{
 		a = len - 1;
-		while (a >= 0)
+		while (a < len)
 		{
-			dst[a] = src[a];
+			((unsigned char *)dst)[a] = ((unsigned char *)src)[a];
 			a--;
 		}
 	}

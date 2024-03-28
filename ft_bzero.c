@@ -6,22 +6,23 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 16:25:57 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/22 16:48:19 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 21:05:06 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_bzero(char *s, int len)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t len)
 {
-	int	a;
+	size_t	a;
 
 	a = 0;
 	if (len != 0)
 	{
 		while (a < len)
 		{
-			s[a] = 0;
+			((unsigned char *)s)[a] = 0;
 			a++;
 		}
 	}
-	return (0);
 }

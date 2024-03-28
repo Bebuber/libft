@@ -6,16 +6,18 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 14:30:03 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 20:46:18 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 21:00:20 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	n;
-	unsigned int	m;
-	unsigned int	k;
+	size_t	i;
+	size_t	n;
+	size_t	m;
+	size_t	k;
 
 	i = 0;
 	k = 0;
