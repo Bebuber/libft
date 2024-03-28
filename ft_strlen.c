@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 13:37:25 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/25 17:03:38 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 17:42:08 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != 0)
@@ -23,3 +23,9 @@ size_t	ft_strlen(const char *str)
 	}
 	return (i);
 }
+
+//int	main(void)
+//{
+//	printf("%d\n", ft_strlen("012345678999999"));
+//	return (0);
+//}

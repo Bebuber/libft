@@ -6,9 +6,11 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 12:24:26 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 20:48:41 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 17:35:55 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -17,3 +19,9 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+
+//int	main(void)
+//{
+//	printf("%d\n",ft_isdigit('a'));
+//	return (0);
+//}

@@ -6,9 +6,11 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 13:24:19 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/22 15:34:41 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 17:35:43 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -17,3 +19,9 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+
+//int	main(void)
+//{
+//	printf("%d\n",ft_isascii('a'));
+//	return (0);
+//}

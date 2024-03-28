@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 19:41:04 by bebuber           #+#    #+#             */
-/*   Updated: 2024/03/26 12:05:58 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/03/28 18:20:32 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		c1[0] = '\0';
 		return (c1);
 	}
-	if (len + start > n)
+	if (n - start < len)
 		len = n - start;
 	c1 = (char *)malloc(len + 1);
 	if (c1 == NULL)
