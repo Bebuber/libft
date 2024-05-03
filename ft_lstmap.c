@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 11:36:42 by bebuber           #+#    #+#             */
-/*   Updated: 2024/05/03 12:10:06 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/05/03 17:56:34 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*tmp;
 	void	*new_content;
 
-	if (!lst || !f)
+	if (!lst)
 		return (NULL);
 	new_lst = NULL;
 	while (lst)
@@ -27,8 +27,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		tmp = ft_lstnew(new_content);
 		if (!tmp)
 		{
-			if (del)
-				del(new_content);
+			del(new_content);
 			ft_lstclear(&new_lst, del);
 			return (NULL);
 		}

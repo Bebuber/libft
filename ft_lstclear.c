@@ -6,26 +6,24 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 11:20:10 by bebuber           #+#    #+#             */
-/*   Updated: 2024/05/03 11:21:02 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/05/03 17:56:42 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*tmp;
 	t_list	*next;
 
-	if (!lst || !del)
+	if (!lst)
 		return ;
-	tmp = *lst;
-	while (tmp)
+	while (*lst)
 	{
-		next = tmp->next;
-		ft_lstdelone(tmp, del);
-		tmp = next;
+		next = (*lst)->next;
+		del((*lst)->content);
+		free (*lst);
+		*lst = next;
 	}
 	*lst = NULL;
 }
-// This function deletes and frees the memory of the given element and every
