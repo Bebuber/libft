@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 11:49:22 by bebuber           #+#    #+#             */
-/*   Updated: 2024/05/03 11:53:55 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/06/09 12:03:13 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,16 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
+# include <limits.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1080
+# endif
+
+# ifndef OPEN_MAX
+#  define OPEN_MAX 10240
+# endif
 
 typedef struct s_list
 {
@@ -65,5 +75,13 @@ void		ft_lstdelone(t_list *lst, void (*del)(void*));
 void		ft_lstclear(t_list **lst, void (*del)(void*));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//ft_printf && ft_printf_utils
+int			ft_putchar(char c, int *count);
+int			ft_putstr(char *c, int *count);
+int			ft_printf(const char *c, ...);
+
+//get_next_line
+char		*get_next_line(int fd);
 
 #endif
